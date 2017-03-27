@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: jee22
+  host: jee22
+  disk_quota: 1024M
+  services:
+  - azev-cloudantNoSQLDB
+  - jee22-cloudantNoSQLDB
+  - availability-monitoring-auto
